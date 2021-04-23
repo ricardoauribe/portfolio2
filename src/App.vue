@@ -1,17 +1,20 @@
 <template>
   <div id="app">
+    <app-header/>
     <landing/>
     <Footer/>
   </div>
 </template>
 
 <script>
+import AppHeader from './components/AppHeader.vue'
 import Landing from './components/Landing.vue'
 import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
+    AppHeader,
     Landing,
     Footer
   }
