@@ -1,6 +1,14 @@
 <template>
     <div>
-        Body
+      <div>
+        Img with history
+      </div>
+      <div>
+        Skills
+      </div>
+      <div>
+        Projects
+      </div>
     </div>
 </template>
 
