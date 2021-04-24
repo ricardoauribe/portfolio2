@@ -1,8 +1,6 @@
 <template>
   <header>
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
-        <font-awesome-icon :icon="['fab', 'amazon']" />
-            <font-awesome-icon icon="address-card" />
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -23,9 +21,9 @@
             </li>
           </ul>
           <div class="social-part">
-            <font-awesome-icon :icon="['fab', 'github']" />
-            <font-awesome-icon :icon="['fab', 'twitter']" />
-            <font-awesome-icon :icon="['fab', 'stack-overflow']" />
+            <font-awesome-icon class="icospace" :icon="['fab', 'github']" />
+            <font-awesome-icon class="icospace" :icon="['fab', 'twitter']" />
+            <font-awesome-icon class="icospace" :icon="['fab', 'stack-overflow']" />
           </div>
         </div>
       </nav>
@@ -72,6 +70,10 @@ export default {
   }
   ul li a{
       margin-right: 20px;
+  }
+
+  .icospace {
+    margin-right: 10px;
   }
 
 </style>
