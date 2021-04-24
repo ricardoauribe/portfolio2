@@ -23,9 +23,9 @@
             </li>
           </ul>
           <div class="social-part">
-            <font-awesome-icon :icon="['fab', 'amazon']" />
-            <font-awesome-icon icon="address-card" />
-            a
+            <font-awesome-icon :icon="['fab', 'github']" />
+            <font-awesome-icon :icon="['fab', 'twitter']" />
+            <font-awesome-icon :icon="['fab', 'stack-overflow']" />
           </div>
         </div>
       </nav>
