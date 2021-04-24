@@ -19,11 +19,15 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Projects</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
           </ul>
           <div class="social-part">
             <font-awesome-icon class="icospace" :icon="['fab', 'github']" />
             <font-awesome-icon class="icospace" :icon="['fab', 'twitter']" />
             <font-awesome-icon class="icospace" :icon="['fab', 'stack-overflow']" />
+            <font-awesome-icon class="icospace" :icon="['fab', 'linkedin']" />
           </div>
         </div>
       </nav>
