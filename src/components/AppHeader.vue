@@ -1,6 +1,8 @@
 <template>
   <header>
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <font-awesome-icon :icon="['fab', 'amazon']" />
+            <font-awesome-icon icon="address-card" />
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -8,45 +10,22 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">Ricardo Uribe <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#">History</a>
             </li>
-            <li class="nav-item dropdown dmenu">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              Our Service
-            </a>
-            <div class="dropdown-menu sm-menu">
-              <a class="dropdown-item" href="#">service2</a>
-              <a class="dropdown-item" href="#">service 2</a>
-              <a class="dropdown-item" href="#">service 3</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Call</a>
-          </li>
-           <!-- <li class="nav-item dropdown dmenu">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              Dropdown link
-            </a>
-            <div class="dropdown-menu sm-menu">
-              <a class="dropdown-item" href="#">Link 1</a>
-              <a class="dropdown-item" href="#">Link 2</a>
-              <a class="dropdown-item" href="#">Link 3</a>
-              <a class="dropdown-item" href="#">Link 4</a>
-              <a class="dropdown-item" href="#">Link 5</a>
-              <a class="dropdown-item" href="#">Link 6</a>
-            </div>
-          </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
           </ul>
           <div class="social-part">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <font-awesome-icon :icon="['fab', 'amazon']" />
+            <font-awesome-icon icon="address-card" />
+            a
           </div>
         </div>
       </nav>
@@ -54,8 +33,18 @@
 </template>
 
 <script>
+import fontawesome from "@fortawesome/fontawesome";
+import brands from "@fortawesome/fontawesome-free-brands";
+import faSpinner from "@fortawesome/fontawesome-free-solid/faSpinner"; 
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+fontawesome.library.add(brands, faSpinner);
+
 export default {
-    name: 'AppHeader'
+    name: 'AppHeader',
+    components: {
+      FontAwesomeIcon
+    }
 }
 </script>
 
