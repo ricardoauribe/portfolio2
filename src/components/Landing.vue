@@ -4,7 +4,7 @@
         Img with history
       </div>
       <div>
-        Skills
+        <skills/>
       </div>
       <div>
         Projects
@@ -13,10 +13,12 @@
 </template>
 
 <script>
+import Skills from './Skills.vue'
 
 export default {
   name: 'Landing',
   components: {
+    Skills
   }
 }
 </script>
